@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="me.doapps.webservices.activity.Actualizar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_doapps" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:text="Actualizar Estudiante"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#797979"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/spinnerE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/SpinnerTheme"
+                android:spinnerMode="dropdown"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            android:orientation="vertical">
+
+            <me.doapps.webservices.widget.DarkEditText
+
+                android:id="@+id/editTextIdA"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="id"
+                android:inputType="number"
+                android:textCursorDrawable="@null"
+                android:enabled="false" />
+
+            <me.doapps.webservices.widget.DarkEditText
+                android:id="@+id/editTextNombreA"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="nombre"
+                android:inputType="textPersonName"
+                android:enabled="false" />
+
+            <me.doapps.webservices.widget.DarkEditText
+                android:id="@+id/editTextScoreA"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="nota"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textCursorDrawable="@null"
+                android:enabled="false" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:text="Nueva data Estudiante"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#818181"
+                android:textSize="30dp" />
+
+            <me.doapps.webservices.widget.DarkEditText
+
+                android:id="@+id/editTextIdA1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="id"
+                android:inputType="number"
+                android:textCursorDrawable="@null"
+                android:enabled="false" />
+
+            <me.doapps.webservices.widget.DarkEditText
+                android:id="@+id/editTextNombreA1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="nombre"
+                android:inputType="textPersonName" />
+
+            <me.doapps.webservices.widget.DarkEditText
+                android:id="@+id/editTextScoreA1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:hint="nota"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textCursorDrawable="@null" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnActualizarA"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button"
+                android:text="ACTUALIZAR"
+                android:textColor="#717171" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

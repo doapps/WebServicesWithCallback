@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="me.doapps.webservices.activity.MainActivity"
+    android:background="#000">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo_doapps" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="364dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Servicios Con CallBacks"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.35"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:gravity="center" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:text="Ingresar"
+                android:textColor="#fff"
+                android:id="@+id/btnIngresar"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/custom_button"/>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:text="eliminar"
+                android:textColor="#fff"
+                android:id="@+id/btnEliminar"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/custom_button"/>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:text="actualizar"
+                android:textColor="#fff"
+                android:id="@+id/btnActualizar"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/custom_button"/>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:text="Buscar"
+                android:textColor="#fff"
+                android:id="@+id/btnBuscar"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/custom_button"/>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:text="Listar"
+                android:textColor="#fff"
+                android:id="@+id/btnListar"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/custom_button"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
